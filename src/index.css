@@ -24,6 +24,11 @@
   scrollbar-color: var(--color-dark-100) var(--color-black);
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 :root {
   --gradient-color: linear-gradient(
     to bottom right,
@@ -49,6 +54,7 @@ html {
   width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 body {
@@ -57,6 +63,7 @@ body {
   background-color: #000;
   color: var(--color-dark-100);
   font-family: var(--font-semibold);
+  -ms-overflow-style: none;
 }
 
 @utility flex-center {
@@ -113,7 +120,7 @@ body {
   }
 
   #hero {
-    @apply h-fit lg:h-[80vh] col-center mt-40 lg:mt-20 2xl:mt-[7vh];
+    @apply h-fit lg:h-[80vh] mt-40 col-center lg:mt-20 2xl:mt-[7vh];
 
     div {
       @apply relative z-10 col-center lg:translate-y-16;
