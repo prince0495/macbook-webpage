@@ -39,12 +39,12 @@ const performanceImages = [
 const performanceImgPositions = [
     {
         id: "p1",
-        left: 5,
-        bottom: 65,
+        left: 4,
+        bottom: 60,
     },
     {
         id: "p2",
-        right: 10,
+        right: 7,
         bottom: 60,
     },
     {
